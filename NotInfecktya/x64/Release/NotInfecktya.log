@@ -1,0 +1,44 @@
+﻿  Building 'NotInfecktya' with toolset 'WindowsKernelModeDriver10.0' and the 'Desktop' target platform.
+  Stamping x64\Release\NotInfecktya.inf
+  Stamping [Version] section with DriverVer=09/26/2023,22.13.4.340
+C:\Users\jotta\source\repos\sandbox Dev NotInfecktya - Complete\NotInfecktya\NotInfecktya.inf : warning 1420: [DefaultInstall]-based INF cannot be processed as Primitive.
+C:\Users\jotta\source\repos\sandbox Dev NotInfecktya - Complete\NotInfecktya\NotInfecktya.inf(25-25): warning 1421: Section [DefaultInstall] should have an architecture decoration.
+C:\Users\jotta\source\repos\sandbox Dev NotInfecktya - Complete\NotInfecktya\NotInfecktya.inf(36-36): warning 1421: Section [DefaultUninstall] should have an architecture decoration.
+C:\Users\jotta\source\repos\sandbox Dev NotInfecktya - Complete\NotInfecktya\NotInfecktya.inf(74-74): warning 1205: Section [MiniFilter.DriverFiles] referenced from DelFiles and CopyFiles directive.
+  NotInfecktya.c
+C:\Users\jotta\source\repos\sandbox Dev NotInfecktya - Complete\NotInfecktya\NotInfecktya.c(37,1): warning C4113: 'FLT_POSTOP_CALLBACK_STATUS (__cdecl *)(PFLT_CALLBACK_DATA,PCFLT_RELATED_OBJECTS,PVOID *)' difere em listas de parâmetro de 'PFLT_POST_OPERATION_CALLBACK'
+C:\Users\jotta\source\repos\sandbox Dev NotInfecktya - Complete\NotInfecktya\NotInfecktya.c(150,57): warning C4020: 'ExAllocatePool': muitos parâmetros reais
+C:\Users\jotta\source\repos\sandbox Dev NotInfecktya - Complete\NotInfecktya\NotInfecktya.c(294,46): warning C4020: 'ExAllocatePool': muitos parâmetros reais
+C:\Users\jotta\source\repos\sandbox Dev NotInfecktya - Complete\NotInfecktya\NotInfecktya.c(427,46): warning C4020: 'ExAllocatePool': muitos parâmetros reais
+C:\Users\jotta\source\repos\sandbox Dev NotInfecktya - Complete\NotInfecktya\NotInfecktya.c(482,53): warning C4047: 'função': 'const UCHAR *' difere em níveis de indireção de 'UCHAR [5][4]'
+C:\Users\jotta\source\repos\sandbox Dev NotInfecktya - Complete\NotInfecktya\NotInfecktya.c(482,42): warning C4024: 'magicBytesVerification': tipos diferentes para parâmetro formal e real 1
+C:\Users\jotta\source\repos\sandbox Dev NotInfecktya - Complete\NotInfecktya\NotInfecktya.c(485,47): warning C4047: 'função': 'const UCHAR *' difere em níveis de indireção de 'UCHAR [4][8]'
+C:\Users\jotta\source\repos\sandbox Dev NotInfecktya - Complete\NotInfecktya\NotInfecktya.c(485,36): warning C4024: 'magicBytesVerification': tipos diferentes para parâmetro formal e real 1
+C:\Users\jotta\source\repos\sandbox Dev NotInfecktya - Complete\NotInfecktya\NotInfecktya.c(488,47): warning C4047: 'função': 'const UCHAR *' difere em níveis de indireção de 'UCHAR [1][2]'
+C:\Users\jotta\source\repos\sandbox Dev NotInfecktya - Complete\NotInfecktya\NotInfecktya.c(488,36): warning C4024: 'magicBytesVerification': tipos diferentes para parâmetro formal e real 1
+C:\Users\jotta\source\repos\sandbox Dev NotInfecktya - Complete\NotInfecktya\NotInfecktya.c(491,47): warning C4047: 'função': 'const UCHAR *' difere em níveis de indireção de 'UCHAR [1][10]'
+C:\Users\jotta\source\repos\sandbox Dev NotInfecktya - Complete\NotInfecktya\NotInfecktya.c(491,36): warning C4024: 'magicBytesVerification': tipos diferentes para parâmetro formal e real 1
+C:\Users\jotta\source\repos\sandbox Dev NotInfecktya - Complete\NotInfecktya\NotInfecktya.c(494,47): warning C4047: 'função': 'const UCHAR *' difere em níveis de indireção de 'UCHAR [1][7]'
+C:\Users\jotta\source\repos\sandbox Dev NotInfecktya - Complete\NotInfecktya\NotInfecktya.c(494,36): warning C4024: 'magicBytesVerification': tipos diferentes para parâmetro formal e real 1
+C:\Users\jotta\source\repos\sandbox Dev NotInfecktya - Complete\NotInfecktya\NotInfecktya.c(497,47): warning C4047: 'função': 'const UCHAR *' difere em níveis de indireção de 'UCHAR [1][12]'
+C:\Users\jotta\source\repos\sandbox Dev NotInfecktya - Complete\NotInfecktya\NotInfecktya.c(497,36): warning C4024: 'magicBytesVerification': tipos diferentes para parâmetro formal e real 1
+C:\Users\jotta\source\repos\sandbox Dev NotInfecktya - Complete\NotInfecktya\NotInfecktya.c(534,52): warning C4020: 'ExAllocatePool': muitos parâmetros reais
+C:\Users\jotta\source\repos\sandbox Dev NotInfecktya - Complete\NotInfecktya\NotInfecktya.c(557,101): warning C4020: 'ExAllocatePool': muitos parâmetros reais
+  NotInfecktya.vcxproj -> C:\Users\jotta\source\repos\sandbox Dev NotInfecktya - Complete\NotInfecktya\x64\Release\NotInfecktya.sys
+  Done Adding Additional Store
+  Successfully signed: C:\Users\jotta\source\repos\sandbox Dev NotInfecktya - Complete\NotInfecktya\x64\Release\NotInfecktya.sys
+  
+  .........................
+  Signability test complete.
+  
+  Errors:
+  None
+  
+  Warnings:
+  None
+  
+  Catalog generation complete.
+  C:\Users\jotta\source\repos\sandbox Dev NotInfecktya - Complete\NotInfecktya\x64\Release\NotInfecktya\notinfecktya.cat
+  Done Adding Additional Store
+  Successfully signed: C:\Users\jotta\source\repos\sandbox Dev NotInfecktya - Complete\NotInfecktya\x64\Release\NotInfecktya\notinfecktya.cat
+  
