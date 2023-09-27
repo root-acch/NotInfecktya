@@ -8,5 +8,5 @@ contact with our team we can provide some code for reference.
 
 # Install / use
 
-Execute NotInfecktyaInstaller.exe to run the setup, after that, open the application and click on "Add Soldiers" to add the decoy files(it takes around 5 minutes).
+Install .Net 6, execute NotInfecktyaInstaller.exe to run the setup, after that, open the application and click on "Add Soldiers" to add the decoy files(it takes around 5 minutes).
 On complete, click on the button "on" to start the driver and get your token... Now your system are safe 😁
