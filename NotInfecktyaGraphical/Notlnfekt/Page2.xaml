@@ -1,0 +1,166 @@
+﻿<Page
+    x:Class="Notlnfekt.Page2"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:Notlnfekt"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="Page2"
+    d:DesignHeight="500"
+    d:DesignWidth="800"
+    Background="Transparent"
+    Loaded="Page_Loaded"
+    mc:Ignorable="d">
+
+
+
+    <Grid Height="450" VerticalAlignment="Top">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="103*" />
+            <ColumnDefinition Width="97*" />
+        </Grid.ColumnDefinitions>
+        <Image
+            Grid.ColumnSpan="2"
+            Width="802"
+            Height="547"
+            Margin="3,2,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Source="/img_fundo.png" />
+        <Image
+            Width="314"
+            Height="369"
+            Margin="44,82,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            RenderTransformOrigin="0.5,0.5"
+            Source="/Rectangle vermelho.png" />
+        <Label x:Name="lbl_titulo"
+            Margin="49,12,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="NotInfecktya"
+            FontSize="36"
+            Foreground="#FA1E4E" />
+        <Button
+            x:Name="btn_liga"
+            Margin="108,113,178,264"
+            Background="Black"
+            BorderBrush="Transparent"
+            Click="Button_Click_1"
+            Content="ON!"
+            FontFamily="Cascadia Mono"
+            FontSize="25"
+            Foreground="White">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="40" />
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button
+            x:Name="btn_off"
+            Margin="109,207,176,170"
+            Background="Black"
+            BorderBrush="Transparent"
+            Click="Button_Click_2"
+            Content="OFF"
+            FontFamily="Cascadia Mono"
+            FontSize="25"
+            Foreground="White">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="40" />
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button
+            x:Name="btn_soldiers"
+            Margin="68,295,132,82"
+            Background="Black"
+            BorderBrush="Transparent"
+            Click="btn_soldiers_Click"
+            Content="Add Soldiers"
+            FontFamily="Cascadia Mono"
+            FontSize="25"
+            Foreground="White">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="40" />
+                </Style>
+            </Button.Resources>
+        </Button>
+        <TextBlock
+            x:Name="loadingMessage"
+            Text=""
+            Margin="48,374,22,16"
+            FontSize="26"
+            Visibility="Hidden"
+           />
+        <ProgressBar Name="progressBar" Width="271" Height="30" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="43,414,0,0" Visibility="Visible">
+            <ProgressBar.Style>
+                <Style TargetType="ProgressBar">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="ProgressBar">
+                                <Grid>
+                                    <Rectangle x:Name="PART_Track" 
+                                               Width="{TemplateBinding Width}" 
+                                               Height="{TemplateBinding Height}" 
+                                               Fill="Black" 
+                                               RadiusX="15" RadiusY="15" Margin="-8,0,-10,0"/>
+                                    <Rectangle x:Name="PART_Indicator" 
+                                               Width="0" 
+                                               Height="{TemplateBinding Height}" 
+                                               Fill="Red" 
+                                               RadiusX="15" RadiusY="15"/>
+                                </Grid>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </ProgressBar.Style>
+        </ProgressBar>
+        <Button
+            x:Name="btn_recupera_Copiar"
+            Margin="166,110,65,258"
+            Background="#FA1E4E"
+            BorderBrush="Transparent"
+            Click="btn_recupera_Copiar_Click"
+            Content="Recuperar"
+            FontFamily="Cascadia Mono"
+            FontSize="25"
+            Foreground="Black" Grid.Column="1">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="40" />
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Label x:Name="lbl_token"
+            Margin="124,332,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="TOKEN:"
+            FontSize="25"
+            Foreground="White" Grid.Column="1" Width="90" RenderTransformOrigin="0.307,0.825" />
+        <TextBox x:Name="tb_token" Grid.Column="1" HorizontalAlignment="Left" Margin="172,379,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="212" RenderTransformOrigin="0.141,0.366" Height="34" FontSize="20" Background="Transparent" Foreground="#FA1E4E" BorderBrush="Transparent" IsReadOnly="True"  />
+        <Button
+            x:Name="btn_apaga"
+            Margin="165,219,66,149"
+            Background="#FA1E4E"
+            BorderBrush="Transparent"
+            Click="btn_apaga_Copiar_Click"
+            Content="Apagar"
+            FontFamily="Cascadia Mono"
+            FontSize="25"
+            Foreground="Black" Grid.Column="1">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="40" />
+                </Style>
+            </Button.Resources>
+        </Button>
+
+    </Grid>
+</Page>

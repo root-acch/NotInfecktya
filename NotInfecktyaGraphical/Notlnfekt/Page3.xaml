@@ -1,0 +1,84 @@
+﻿<Page
+    x:Class="Notlnfekt.Page3"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:Notlnfekt"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+
+    Title="Page3"
+    d:DesignHeight="500"
+    d:DesignWidth="800"
+    Loaded="Page_Loaded"
+    mc:Ignorable="d">
+
+    <Grid Margin="0,0,-4,8">
+        <Image
+            Width="802"
+            Height="547"
+            Margin="3,2,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Source="/img_fundo-removebg-preview.png" />
+        <Image
+            Width="375"
+            Height="146"
+            Margin="217,255,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Source="/RectangleRoxo.png"  />
+        <Image
+            Width="375"
+            Height="146"
+            Margin="216,111,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Source="/RectangleRoxo.png"  />
+        <Image
+            Width="283"
+            Height="53"
+            Margin="464,394,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Source="/© 2023 - ROOT@ACCH all right reserved.png" />
+        <Label
+            Margin="324,151,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            FontSize="24"
+            Foreground="White"  FontFamily="Cascadia Mono"/>
+        <Label x:Name="lbl_lang"
+            Margin="348,268,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Language"
+            FontSize="26"
+            Foreground="White"  FontFamily="Cascadia Mono"/>
+        <Label x:Name="lbl_luz"
+            Margin="332,121,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Dark/Light Mode"
+            FontSize="24"
+            Foreground="White"  FontFamily="Cascadia Mono"/>
+        <Image
+            Width="80"
+            Height="72"
+            Margin="240,287,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Source="/idioma.png" />
+        <Image
+            Width="68"
+            Height="68"
+            Margin="242,142,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Source="/modo_claro_escuro.png" />
+        <ComboBox x:Name="cmb_lung" Background="#1D1B31" Foreground="#1D1B31" HorizontalAlignment="Left" Margin="351,317,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="ComboBox_SelectionChanged" BorderBrush="#FF1B0707">
+            <ComboBoxItem Content="Ingles"  FontFamily="Cascadia Mono"/>
+            <ComboBoxItem Content="Portugues"  FontFamily="Cascadia Mono"/>
+            <ComboBoxItem Content="Espanhol"  FontFamily="Cascadia Mono"/>
+        </ComboBox>
+    </Grid>
+</Page>

@@ -1,0 +1,94 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+    <PackageIcon>logo_notInfektya.png</PackageIcon>
+    <ApplicationIcon>logo_notInfektya.ico</ApplicationIcon>
+    <Platforms>AnyCPU;x64</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="DashBoard.png" />
+    <None Remove="Design sem nome %281%29.png" />
+    <None Remove="Design sem nome %282%29.png" />
+    <None Remove="Design sem nome %284%29.png" />
+    <None Remove="Design sem nome %287%29.png" />
+    <None Remove="Design sem nome %288%29.png" />
+    <None Remove="Design sem nome %289%29.png" />
+    <None Remove="Design_sem_nome-removebg-preview %281%29.png" />
+    <None Remove="Design_sem_nome__1_-removebg-preview %281%29.png" />
+    <None Remove="Design_sem_nome__1_-removebg-preview.png" />
+    <None Remove="Design_sem_nome__2_-removebg-preview %281%29.png" />
+    <None Remove="Design_sem_nome__2_-removebg-preview.png" />
+    <None Remove="Design_sem_nome__3_-removebg-preview.png" />
+    <None Remove="Design_sem_nome__7_-removebg-preview.png" />
+    <None Remove="Design_sem_nome__8_-removebg-preview.png" />
+    <None Remove="Design_sem_nome__9_-removebg-preview.png" />
+    <None Remove="idioma.png" />
+    <None Remove="img_fundo.png" />
+    <None Remove="linha2.png" />
+    <None Remove="logo_menu.png" />
+    <None Remove="menu_background.png" />
+    <None Remove="modo_claro_escuro.png" />
+    <None Remove="nav.png" />
+    <None Remove="qr-code 1.png" />
+    <None Remove="qr_code.jpeg" />
+    <None Remove="Rectangle 5.png" />
+    <None Remove="Rectangle vermelho.png" />
+    <None Remove="RectangleRoxo.png" />
+    <None Remove="Vector-_1__1.png" />
+    <None Remove="Vector-_2_.png" />
+    <None Remove="Vector-_3_.png" />
+    <None Remove="Vector-_4_.png" />
+    <None Remove="Vector-_5_.png" />
+    <None Remove="Vector_1.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="logo_notInfektya.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\..\..\logo_notInfektya.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Speech" Version="7.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="idioma.png" />
+    <Resource Include="img_fundo.png" />
+    <Resource Include="linha2.png" />
+    <Resource Include="logo_menu.png" />
+    <Resource Include="menu_background.png" />
+    <Resource Include="modo_claro_escuro.png" />
+    <Resource Include="qr_code.jpeg" />
+    <Resource Include="RectangleRoxo.png" />
+    <Resource Include="Rectangle vermelho.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Settings.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+</Project>

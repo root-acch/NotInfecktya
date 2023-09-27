@@ -1,0 +1,111 @@
+﻿<Page
+    x:Class="Notlnfekt.Page4"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:Notlnfekt"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="Page4"
+    d:DesignHeight="500"
+    d:DesignWidth="800"
+    Loaded="Page_Loaded"
+    mc:Ignorable="d">
+
+    <Grid>
+
+        <Image
+            Width="802"
+            Height="547"
+            Margin="4,2,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Source="/img_fundo-removebg-preview.png" />
+
+        <Image
+            Width="268"
+            Height="340"
+            Margin="26,40,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Source="/Rectangle vermelho.png" />
+
+        <Image
+            Width="360"
+            Height="543"
+            Margin="350,-31,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Source="/Rectangle vermelho.png" RenderTransformOrigin="0.5,0.5" >
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-89.821"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <TextBlock
+            x:Name="text_dim"
+            Width="464"
+            Height="309"
+            Margin="295,51,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            TextWrapping="Wrap"><Run
+                FontFamily="Cascadia Mono"
+                FontSize="12.666666666666666"
+                Foreground="White"
+                Text="Dear user," /><LineBreak /><Run
+                FontFamily="Cascadia Mono"
+                FontSize="12.666666666666666"
+                Foreground="White"
+                Text="I would like to introduce our Startup and an incredible opportunity for you to support our mission." /><LineBreak /><Run
+                FontFamily="Cascadia Mono"
+                FontSize="12.666666666666666"
+                Foreground="White"
+                Text="At root@Acch, we have developed an innovative kernel driver that can detect ransomware attacks in real-time, providing a robust defense against this growing threat." /><LineBreak /><Run
+                FontFamily="Cascadia Mono"
+                FontSize="12.666666666666666"
+                Foreground="White"
+                Text="However, we need your help to bring this groundbreaking technology to the forefront. Your contribution will directly support our research, development, and testing efforts, enabling us to make a lasting impact in the fight against ransomware." /><LineBreak /><Run
+                FontFamily="Cascadia Mono"
+                FontSize="12.666666666666666"
+                Foreground="White"
+                Text="Please send our donation on the QR code to contribute and support our mission. Every donation, no matter the size, is greatly appreciated and will help us secure the digital world we rely on." /><LineBreak /><Run
+                FontFamily="Cascadia Mono"
+                FontSize="12.666666666666666"
+                Foreground="White"
+                Text="Thank you for considering supporting our startup. Together, we can make a significant difference in combating ransomware and protecting businesses and individuals from its devastating effects." /><LineBreak /><Run
+                FontFamily="Cascadia Mono"
+                FontSize="12.666666666666666"
+                Foreground="White"
+                Text="Warm regards." /></TextBlock>
+        <Button
+            Width="153"
+            Height="68"
+            Margin="81,294,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Click="CopyToClipboard_Click"
+            Content="copiar"
+            FontSize="25"
+            Foreground="White"
+            Background="Black">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border Background="{TemplateBinding Background}" CornerRadius="20">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Image
+            Width="218"
+            Height="229"
+            Margin="41,56,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Source="/qr_code.jpeg" />
+    </Grid>
+</Page>
