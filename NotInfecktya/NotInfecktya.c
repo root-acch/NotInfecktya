@@ -14,7 +14,7 @@ ULONG userToken = 1;
 ULONG endOps = 0;
 CSHORT previusTime = 0;
 ULONG endTime = 0;
-ULONG checkTime = 5;
+ULONG checkTime = 10;
 
 ULONG FilesEntropyChange = 0;
 
@@ -850,9 +850,7 @@ FLT_POSTOP_CALLBACK_STATUS InfecktyaPostWrite(PFLT_CALLBACK_DATA Data, PCFLT_REL
 								CSHORT seconds_passed = (timeFields.Second + 60 - previusTime) % 60;
 
 								if (seconds_passed <= checkTime) {
-									if (newFile >= backup + 1000) {
-										FilesEntropyChange++;
-									}
+									FilesEntropyChange++;
 
 									if (FilesEntropyChange >= 2 && randomToken != userToken) {
 										ULONG pid = FltGetRequestorProcessId(Data);
