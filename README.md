@@ -59,6 +59,15 @@ contact with our team we can provide some code for reference.
 </blockquote>
 <img width="350" heigth="350" src="./LogoServices/BackFromDead.png" alt="logo">
 
+# Next Steps -> coming soon
+
+<ul>
+      <li>NotInfecktya Persistence</li>
+      <li>Soldiers Auto-Generator</li>
+      <li>Backup Updates</li>
+      <li>PPID Terminate</li>
+</ul>
+
 # Dependencies
 
 <ul><li>Install .Net 6</li></ul>
